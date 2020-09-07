@@ -52,6 +52,11 @@ public class Task002Impl implements Task002 {
         if (sourceString == null || separator == null) {
             throw new IllegalArgumentException();
         }
+
+        if (!sourceString.contains(separator)) {
+            return sourceString;
+        }
+
         String[] strArr = sourceString.split(separator);
 
         return strArr[1];
@@ -68,8 +73,13 @@ public class Task002Impl implements Task002 {
 
     @Override
     public String join(String[] sourceCollection, String glue) {
-        if (sourceCollection == null || glue == null) {
+        if (sourceCollection == null || glue == null || sourceCollection.length == 0) {
             throw new IllegalArgumentException();
+        }
+        for (String x : sourceCollection) {
+            if (x == null) {
+                throw new IllegalArgumentException();
+            }
         }
 
         return String.join(glue, sourceCollection);

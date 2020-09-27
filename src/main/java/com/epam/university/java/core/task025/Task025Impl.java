@@ -9,6 +9,9 @@ public class Task025Impl implements Task025 {
         if (sourceMessage.isEmpty()) {
             return 0;
         }
+        if (sourceMessage.length() % 3 != 0) {
+            return sourceMessage.length() % 3;
+        }
         int i;
         int counter = 0;
         for (i = 0; i < sourceMessage.length(); i = i + 3) {

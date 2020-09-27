@@ -6,7 +6,12 @@ public class Task023Impl implements Task023 {
         if (phoneString == null) {
             throw new IllegalArgumentException();
         }
+        if (phoneString.length() < 10) {
+            throw new IllegalArgumentException();
+        }
+        String operator = phoneString.replaceAll("[+ .,;:!?/'()-]", "");
+        operator = operator.substring(1, 4);
 
-        return null;
+        return operator;
     }
 }

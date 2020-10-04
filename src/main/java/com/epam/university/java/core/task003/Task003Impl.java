@@ -1,6 +1,12 @@
 package com.epam.university.java.core.task003;
 
-import java.util.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 public class Task003Impl implements Task003 {
     @Override
@@ -62,9 +68,6 @@ public class Task003Impl implements Task003 {
         sourceList.removeAll(remoteList);
 
         return sourceList.toArray(new String[0]);
-
-
-        //return new String[0];
     }
 
     @Override

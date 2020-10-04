@@ -9,7 +9,7 @@ public class MappingOperationImpl implements MappingOperation {
         char[] cropped = source.toCharArray();
         String reversed = "";
 
-        for (int i = cropped.length-1; i >= 0; i--) {
+        for (int i = cropped.length - 1; i >= 0; i--) {
             reversed += cropped[i];
         }
 

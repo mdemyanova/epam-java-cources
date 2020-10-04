@@ -18,7 +18,8 @@ public class Task005Impl implements Task005 {
         // ---One digit---
         if (digits == 1) {
             for (currentFirstNumber = 1; currentFirstNumber <= 9; currentFirstNumber++) {
-                for (currentSecondNumber = 1; currentSecondNumber < currentFirstNumber; currentSecondNumber++) {
+                for (currentSecondNumber = 1; currentSecondNumber < currentFirstNumber;
+                     currentSecondNumber++) {
                     result = Math.abs((currentFirstNumber / currentSecondNumber) - Math.PI);
                     if (result < min) {
                         min = result;
@@ -27,10 +28,11 @@ public class Task005Impl implements Task005 {
                     }
                 }
             }
-        // ---Two digits---
+            // ---Two digits---
         } else if (digits == 2) {
             for (currentFirstNumber = 10; currentFirstNumber <= 99; currentFirstNumber++) {
-                for (currentSecondNumber = 10; currentSecondNumber < currentFirstNumber; currentSecondNumber++) {
+                for (currentSecondNumber = 10; currentSecondNumber < currentFirstNumber;
+                     currentSecondNumber++) {
                     result = Math.abs((currentFirstNumber / currentSecondNumber) - Math.PI);
                     if (result < min) {
                         min = result;
@@ -39,10 +41,11 @@ public class Task005Impl implements Task005 {
                     }
                 }
             }
-        // ---Three digits---
+            // ---Three digits---
         } else if (digits == 3) {
             for (currentFirstNumber = 100; currentFirstNumber <= 999; currentFirstNumber++) {
-                for (currentSecondNumber = 100; currentSecondNumber < currentFirstNumber; currentSecondNumber++) {
+                for (currentSecondNumber = 100; currentSecondNumber < currentFirstNumber;
+                     currentSecondNumber++) {
                     result = Math.abs((currentFirstNumber / currentSecondNumber) - Math.PI);
                     if (result < min) {
                         min = result;
@@ -51,10 +54,11 @@ public class Task005Impl implements Task005 {
                     }
                 }
             }
-        // ---Four digits---
+            // ---Four digits---
         } else if (digits == 4) {
             for (currentFirstNumber = 1000; currentFirstNumber <= 9999; currentFirstNumber++) {
-                for (currentSecondNumber = 1000; currentSecondNumber < currentFirstNumber; currentSecondNumber++) {
+                for (currentSecondNumber = 1000; currentSecondNumber < currentFirstNumber;
+                     currentSecondNumber++) {
                     result = Math.abs((currentFirstNumber / currentSecondNumber) - Math.PI);
                     if (result < min) {
                         min = result;

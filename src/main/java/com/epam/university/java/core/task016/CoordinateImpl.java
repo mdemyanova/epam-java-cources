@@ -39,14 +39,16 @@ public class CoordinateImpl implements Coordinate {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o)
+        if (this == o) {
             return true;
-        if (o == null || getClass() != o.getClass())
+        }
+        if (o == null || getClass() != o.getClass()) {
             return false;
+        }
         CoordinateImpl that = (CoordinateImpl) o;
 
-        return xAxis == that.xAxis &&
-                yAxis == that.yAxis;
+        return xAxis == that.xAxis
+                && yAxis == that.yAxis;
     }
 
     @Override

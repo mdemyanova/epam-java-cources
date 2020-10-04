@@ -89,7 +89,8 @@ public class Task003Impl implements Task003 {
         if (source == null || operation == null) {
             throw new IllegalArgumentException();
         }
-        int i, j;
+        int i;
+        int j;
         SortedSet<Integer> tree = new TreeSet<>();
         for (i = 0; i < source.length; i++) {
             String[] tmp = ((operation.flatMap(source[i])));

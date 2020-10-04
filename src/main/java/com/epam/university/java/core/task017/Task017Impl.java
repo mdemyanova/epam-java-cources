@@ -28,7 +28,8 @@ public class Task017Impl implements Task017 {
             }
         }
 
-        return String.format(Locale.ENGLISH, "%.1f, %.2f, %+.2f, %a", args[0], args[0], args[0], args[0]);
+        return String.format(Locale.ENGLISH, "%.1f, %.2f, %+.2f, %a",
+                args[0], args[0], args[0], args[0]);
     }
 
     @Override

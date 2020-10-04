@@ -27,7 +27,8 @@ public class Task006Impl implements Task006 {
         double sumAmperageVoltage = 0;
         double sumAmperagePow = 0;
         for (Measurement x : measurements) {
-            sumAmperageVoltage += (x.getAmperage() - averageAmperage) * (x.getVoltage() - averageVoltage);
+            sumAmperageVoltage += (x.getAmperage() - averageAmperage)
+                    * (x.getVoltage() - averageVoltage);
             sumAmperagePow += Math.pow((x.getAmperage() - averageAmperage), 2);
         }
 

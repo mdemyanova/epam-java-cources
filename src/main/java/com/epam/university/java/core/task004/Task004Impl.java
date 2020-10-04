@@ -11,7 +11,8 @@ public class Task004Impl implements Task004 {
         }
 
         ArrayList<String> intersect = new ArrayList<>();
-        int i, j;
+        int i;
+        int j;
         for (i = 0; i < first.length; i++) {
             for (j = 0; j < second.length; j++) {
                 if (first[i].equals(second[j])) {
@@ -28,7 +29,8 @@ public class Task004Impl implements Task004 {
             throw new IllegalArgumentException();
         }
         LinkedHashSet<String> union = new LinkedHashSet<>();
-        int i, j;
+        int i;
+        int j;
         for (i = 0; i < first.length; i++) {
             union.add(first[i]);
         }

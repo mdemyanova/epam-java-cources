@@ -1,6 +1,8 @@
 package com.epam.university.java.core.task027;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.ArrayList;
 
 public class Task027Impl implements Task027 {
     @Override

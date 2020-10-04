@@ -57,6 +57,8 @@ public class RobotImpl implements Robot {
                     position.setX(position.getX() + 1);
                 }
                 break;
+            default:
+                break;
         }
     }
 }

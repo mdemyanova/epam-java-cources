@@ -2,7 +2,10 @@ package com.epam.university.java.core.task009;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.*;
+import java.util.Collection;
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.Scanner;
 
 public class Task009Impl implements Task009 {
     @Override

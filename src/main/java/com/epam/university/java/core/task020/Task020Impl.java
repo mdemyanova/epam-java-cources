@@ -1,6 +1,10 @@
 package com.epam.university.java.core.task020;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 

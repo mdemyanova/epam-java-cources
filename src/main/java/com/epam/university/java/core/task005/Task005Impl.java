@@ -67,11 +67,11 @@ public class Task005Impl implements Task005 {
                     }
                 }
             }
-        }
-        // ---Five digits---
-        else if (digits == 5) {
+            // ---Five digits---
+        } else if (digits == 5) {
             for (currentFirstNumber = 30000; currentFirstNumber <= 99999; currentFirstNumber++) {
-                for (currentSecondNumber = 10000; currentSecondNumber < currentFirstNumber / 3; currentSecondNumber++) {
+                for (currentSecondNumber = 10000; currentSecondNumber < currentFirstNumber / 3;
+                     currentSecondNumber++) {
                     result = Math.abs((currentFirstNumber / currentSecondNumber) - Math.PI);
                     if (result < min) {
                         min = result;

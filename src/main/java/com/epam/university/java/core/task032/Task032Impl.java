@@ -22,5 +22,5 @@ public class Task032Impl implements Task032 {
                 new Class[]{SomeActionExecutor.class}, proxy);
 
         return executor;
-        }
     }
+}

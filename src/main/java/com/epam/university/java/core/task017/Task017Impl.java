@@ -1,5 +1,7 @@
 package com.epam.university.java.core.task017;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 public class Task017Impl implements Task017 {
@@ -42,6 +44,9 @@ public class Task017Impl implements Task017 {
             }
         }
 
-        return String.format("%1$tY.0%1$te.0%1$te", args);
+        String pattern = "yyyy.dd.MM";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+
+        return simpleDateFormat.format(new Date());
     }
 }
